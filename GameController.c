@@ -1,4 +1,4 @@
-// 게임 컨트롤러
+// 寃뚯엫 而⑦듃濡ㅻ윭
 int GameController() {
 	Page1();
 }
