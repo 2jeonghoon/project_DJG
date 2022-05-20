@@ -37,8 +37,8 @@ typedef struct SelectLinkedList {
 
 //  트리
 typedef struct TreeNode {
-	TextLinkedList* head;
-	SelectLinkedList* head;
+	TextLinkedList* thead;
+	SelectLinkedList* shead;
 	int maxindex;
 	struct TreeNode* left, * right;
 }TreeNode;
