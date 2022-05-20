@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <conio.h>
 #include <windows.h>
@@ -68,6 +69,7 @@ TreeNode b = {&t1, &s1, 1, NULL, NULL};
 COORD pos = { 0, 0 }; // X, Y값 구조체
 keyControl keyControlData;
 keyControl keyControlData = { 0, 0, 0, 0 };
+
 
 //노드 선언부
 //격리 생활관
@@ -218,6 +220,74 @@ TreeNode f33 = { "열쇠가 필요하다. 열쇠는 주변에서 찾을 수 있�
 TreeNode* root = &f1;
 TreeNode* preroot;
 */
+
+TreeNode* InsertTreeNode(TreeNode* root, char* temptext, char* tempselect) {
+	TreeNode* tree = (TreeNode*)malloc(sizeof(TreeNode));
+	TextLinkedList* thead = NULL; // TextLinkedList - head
+	SelectLinkedList* shead = NULL; // SelectLinkedList - head
+	TextLinkedList* ttail = NULL; // TextLinkedList - tail
+	SelectLinkedList* stail = NULL; // SelectLinkedList - tail
+	tree->thead = thead;
+	tree->shead = shead;
+
+	char* tmp1 = malloc(sizeof(char) * 100);
+	char* tmp2 = malloc(sizeof(char) * 100);
+
+	strcpy(tmp1, temptext);
+	strcpy(tmp2, tempselect);
+	// 문자열을 \ 기준으로 자른 후 그 포인터를 반환해주는 strtok함수
+	char* ttext = strtok(tmp1, ".");
+
+	// TextLinkedList Insert
+	while (ttext != NULL) {
+		TextLinkedList* i = (TextLinkedList*)malloc(sizeof(TextLinkedList));
+		if (ttail == NULL) {
+			tree->thead = i; // thead를 설정해줌
+		}
+		else {
+			ttail->link = i;
+		}
+		ttail = i; // ttail을 설정해줌
+		i->text = ttext;
+		i->link = NULL;
+		ttext = strtok(NULL, "."); // 다음 문자열을 \n 기준으로 자르고 포인터를 반환
+	}
+	// SelectLinkedList Insert
+
+	char* stext = strtok(tmp2, ".");
+	while (stext != NULL) {
+		SelectLinkedList* j = (SelectLinkedList*)malloc(sizeof(SelectLinkedList));
+		if (stail == NULL) {
+			tree->shead = j; // thead를 설정해줌
+			j->llink = NULL;
+		}
+		else {
+			stail->rlink = j; // 이중연결 설정
+			j->llink = stail; // 이중연결 설정
+		}
+		stail = j; // ttail을 설정해줌
+		j->text = stext;
+		j->rlink = NULL;
+		stext = strtok(NULL, "."); // 다음 문자열을 \n 기준으로 자르고 포인터를 반환
+		tree->maxindex++;
+	}
+
+	if (root == NULL) {
+		root = tree;
+	}
+	else { // treenode가 들어갈 위치 탐색해서 들어감 "완전이진트리"
+
+	}
+	
+	return root;
+}
+
+// 단순 연결리스트 시작
+TextLinkedList* insert(TextLinkedList* head, TextLinkedList* pre, char* text) {
+	TextLinkedList* p = (TextLinkedList*)malloc(sizeof(TextLinkedList));
+}
+// 단순 연결리스트 종료
+
 // 현재 pos.X, posY로 콘솔 위치지정
 void gotoxy() {
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);  // 콘솔 위치지정
@@ -448,11 +518,13 @@ void print_console() {
 	}
 }
 int main() {
+	TreeNode* root = NULL;
 
 	system("mode con cols=100 lines=30"); // mode con:콘솔모드 cols:가로 lines:세로
 	/*Intro();
 	Home();
 	*/
+	root = InsertTreeNode(root, "칸막이가 열렸다. 밖으로 나가자", "밖으로 나간다. 기다린다");
 	print_console();
 	return 0;
 }
