@@ -39,7 +39,7 @@ typedef struct SelectLinkedList {
 typedef struct TreeNode {
 	TextLinkedList* head;
 	SelectLinkedList* head;
-	int currentindex;
+	int maxindex;
 	struct TreeNode* left, * right;
 }TreeNode;
 
