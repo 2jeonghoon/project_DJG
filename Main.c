@@ -169,472 +169,66 @@ TreeNode f21;
 TreeNode f31;
 TreeNode f32;
 
-//========================================================선택지 선언부===========================================================
-SelectLinkedList f1_s1;
-SelectLinkedList f1_s2;
-
-SelectLinkedList e1_s1;
-SelectLinkedList e1_s2;
-SelectLinkedList e1_s3;
-SelectLinkedList e1_s4;
-
-
-SelectLinkedList c1_s1;
-SelectLinkedList c1_s2;
-SelectLinkedList c1_s3;
-SelectLinkedList c1_s4;
-
-SelectLinkedList cr_s1;
-SelectLinkedList cr_s2;
-SelectLinkedList cr_s3;
-SelectLinkedList cr_s4;
-
-SelectLinkedList c3_s1;
-SelectLinkedList c3_s2;
-
-SelectLinkedList c21_s1;
-SelectLinkedList c21_s2;
-SelectLinkedList c21_s3;
-SelectLinkedList c21_s4;
-
-SelectLinkedList w1_s1;
-SelectLinkedList w1_s2;
-SelectLinkedList w1_s3;
-SelectLinkedList w1_s4;
-SelectLinkedList w1_s5;
-SelectLinkedList w1_s6;
-SelectLinkedList w1_s7;
-
-SelectLinkedList p1_s1;
-SelectLinkedList p1_s2;
-SelectLinkedList p1_s3;
-SelectLinkedList p1_s4;
-SelectLinkedList p1_s5;
-SelectLinkedList p1_s6;
-SelectLinkedList p1_s7;
-SelectLinkedList p1_s8;
-
-SelectLinkedList p68_s1;
-SelectLinkedList p68_s2;
-
-
-SelectLinkedList r2_s1;
-SelectLinkedList r2_s2;
-
-SelectLinkedList r31_s1;
-SelectLinkedList r31_s2;
-SelectLinkedList r31_s3;
-SelectLinkedList r31_s4;
-
-//===================================================================텍스트 선언부======================================================
-TextLinkedList f1_t1;
-TextLinkedList f1_t2;
-TextLinkedList f1_t3;
-
-TextLinkedList f2_t1;
-TextLinkedList f2_t2;
-
-TextLinkedList f3_t1;
-
-TextLinkedList f21_t1;
-
-TextLinkedList f31_t1;
-TextLinkedList f31_t2;
-
-TextLinkedList f32_t1;
-TextLinkedList f32_t2;
-
-//텍스트 동편
-TextLinkedList e1_t1;
-TextLinkedList e1_t2;
-TextLinkedList e1_t3;
-TextLinkedList e1_t4;
-
-TextLinkedList e2_t1;
-TextLinkedList e2_t2;
-TextLinkedList e21_t1;
-TextLinkedList e21_t2;
-
-TextLinkedList e3_t1;
-TextLinkedList e3_t2;
-
-TextLinkedList e31_t1;
-
-TextLinkedList e4_t1;
-TextLinkedList e4_t2;
-TextLinkedList e4_t3;
-TextLinkedList e4_t4;
-
-TextLinkedList e41_t1;
-TextLinkedList e41_t2;
-
-//텍스트 중앙 복도
-TextLinkedList c1_t1;
-TextLinkedList c1_t2;
-TextLinkedList c1_t3;
-TextLinkedList c1_t4;
-TextLinkedList c1_t5;
-TextLinkedList c1_t6;
-
-TextLinkedList cr_t1;
-TextLinkedList cr_t2;
-TextLinkedList cr_t3;
-
-TextLinkedList c3_t1;
-TextLinkedList c3_t2;
-TextLinkedList c3_t3;
-TextLinkedList c2_t1;
-
-
-TextLinkedList c21_t1;
-TextLinkedList c21_t2;
-TextLinkedList c21_t3;
-TextLinkedList c21_t4;
-TextLinkedList c21_t5;
-
-TextLinkedList c22_t1;
-TextLinkedList c22_t2;
-TextLinkedList c22_t3;
-
-//텍스트 서편
-TextLinkedList w1_t1;
-TextLinkedList w1_t2;
-TextLinkedList w1_t3;
-
-TextLinkedList w2_t1;
-TextLinkedList w2_t2;
-
-TextLinkedList w21_t1;
-
-TextLinkedList w3_t1;
-TextLinkedList w3_t2;
-
-TextLinkedList w31_t1;
-
-TextLinkedList w4_t1;
-TextLinkedList w4_t2;
-TextLinkedList w4_t3;
-
-TextLinkedList w41_t1;
-TextLinkedList w41_t2;
-TextLinkedList w41_t3;
-TextLinkedList w41_t4;
-
-TextLinkedList w42_t1;
-TextLinkedList w42_t2;
-TextLinkedList w42_t3;
-
-TextLinkedList w43_t1;
-
-TextLinkedList w5_t1;
-TextLinkedList w5_t2;
-TextLinkedList w5_t3;
-
-TextLinkedList w51_t1;
-TextLinkedList w51_t2;
-
-
-TextLinkedList w6_t1;
-TextLinkedList w6_t2;
-TextLinkedList w6_t3;
-
-TextLinkedList w61_t1;
-TextLinkedList w61_t2;
-TextLinkedList w61_t3;
-
-TextLinkedList w62_t1;
-TextLinkedList w62_t2;
-TextLinkedList w62_t3;
-TextLinkedList w62_t4;
-TextLinkedList w62_t5;
-
-TextLinkedList w63_t1;
-TextLinkedList w7_t1;
-TextLinkedList w7_t2;
-TextLinkedList w7_t3;
-TextLinkedList w71_t1;
-
-//텍스트 1층
-
-TextLinkedList p1_t1;
-TextLinkedList p1_t2;
-TextLinkedList p1_t3;
-
-TextLinkedList p2_t1;
-TextLinkedList p2_t2;
-TextLinkedList p2_t3;
-
-TextLinkedList p21_t1;
-
-TextLinkedList p3_t1;
-TextLinkedList p3_t2;
-TextLinkedList p3_t3;
-TextLinkedList p3_t4;
-TextLinkedList p3_t5;
-
-TextLinkedList p31_t1;
-
-TextLinkedList p4_t1;
-
-TextLinkedList p5_t1;
-TextLinkedList p5_t2;
-TextLinkedList p5_t3;
-TextLinkedList p5_t4;
-TextLinkedList p5_t5;
-TextLinkedList p5_t6;
-TextLinkedList p5_t7;
-TextLinkedList p51_t1;
-
-TextLinkedList p52_t1;
-TextLinkedList p52_t2;
-TextLinkedList p52_t3;
-TextLinkedList p52_t4;
-
-
-TextLinkedList p53_t1;
-TextLinkedList p53_t2;
-
-TextLinkedList p54_t1;
-TextLinkedList p54_t2;
-TextLinkedList p54_t3;
-TextLinkedList p54_t4;
-TextLinkedList p54_t5;
-
-TextLinkedList p6_t1;
-
-TextLinkedList p61_t1;
-TextLinkedList p61_t2;
-TextLinkedList p61_t3;
-TextLinkedList p61_t4;
-
-TextLinkedList p62_t1;
-TextLinkedList p62_t2;
-
-TextLinkedList p63_t1;
-TextLinkedList p63_t2;
-TextLinkedList p63_t3;
-
-TextLinkedList p64_t1;
-TextLinkedList p64_t2;
-TextLinkedList p64_t3;
-TextLinkedList p64_t4;
-
-TextLinkedList p65_t1;
-TextLinkedList p65_t2;
-
-TextLinkedList p67_t1;
-TextLinkedList p67_t2;
-TextLinkedList p67_t3;
-
-TextLinkedList p68_t1;
-
-TextLinkedList p69_t1;
-TextLinkedList p69_t2;
-TextLinkedList p69_t3;
-TextLinkedList p69_t4;
-TextLinkedList p69_t5;
-TextLinkedList p69_t6;
-TextLinkedList p69_t7;
-
-TextLinkedList p610_t1;
-TextLinkedList p610_t2;
-TextLinkedList p610_t3;
-TextLinkedList p610_t4;
-TextLinkedList p610_t5;
-
-
-TextLinkedList p7_t1;
-TextLinkedList p7_t2;
-TextLinkedList p7_t3;
-TextLinkedList p7_t4;
-
-TextLinkedList p71_t1;
-TextLinkedList p71_t2;
-
-TextLinkedList p8_t1;
-TextLinkedList p8_t2;
-TextLinkedList p8_t3;
-
-TextLinkedList p81_t1;
-TextLinkedList p81_t2;
-TextLinkedList p81_t3;
-TextLinkedList p82_t1;
-TextLinkedList p82_t2;
-TextLinkedList p82_t3;
-
-//텍스트 옥상
-TextLinkedList r1_t1;
-TextLinkedList r1_t2;
-TextLinkedList r1_t3;
-TextLinkedList r1_t4;
-
-TextLinkedList r2_t1;
-TextLinkedList r2_t2;
-TextLinkedList r2_t3;
-TextLinkedList r2_t4;
-
-TextLinkedList r31_t1;
-TextLinkedList r31_t2;
-TextLinkedList r31_t3;
-TextLinkedList r31_t4;
-TextLinkedList r31_t5;
-TextLinkedList r31_t6;
-
-TextLinkedList r32_t1;
-TextLinkedList r32_t2;
-TextLinkedList r32_t3;
-
-TextLinkedList r3_t1;
-TextLinkedList r3_t2;
-TextLinkedList r3_t3;
-
-TextLinkedList r4_t1;
-TextLinkedList r4_t2;
-TextLinkedList r4_t3;
-TextLinkedList r4_t4;
-
-//텍스트 엔딩
-TextLinkedList h1_t1;
-TextLinkedList h1_t2;
-TextLinkedList h1_t3;
-TextLinkedList h1_t4;
-TextLinkedList h1_t5;
-TextLinkedList h1_t6;
-TextLinkedList h1_t7;
-TextLinkedList h1_t8;
-TextLinkedList h1_t9;
-TextLinkedList h1_t10;
-TextLinkedList h1_t11;
-TextLinkedList h1_t12;
-TextLinkedList h1_t13;
-
-TextLinkedList h2_t1;
-TextLinkedList h2_t2;
-TextLinkedList h2_t3;
-TextLinkedList h2_t4;
-TextLinkedList h2_t5;
-TextLinkedList h2_t6;
-TextLinkedList h2_t7;
-TextLinkedList h2_t8;
-TextLinkedList h2_t9;
-TextLinkedList h2_t10;
-TextLinkedList h2_t11;
-TextLinkedList h2_t12;
-TextLinkedList h2_t13;
-TextLinkedList h2_t14;
-TextLinkedList h2_t15;
-TextLinkedList h2_t16;
-TextLinkedList h2_t17;
-TextLinkedList h2_t18;
-TextLinkedList h2_t19;
-TextLinkedList h2_t20;
-TextLinkedList h2_t21;
-TextLinkedList h2_t22;
-TextLinkedList h2_t23;
-TextLinkedList h2_t24;
-
-TextLinkedList b1_t1;
-TextLinkedList b1_t2;
-TextLinkedList b1_t3;
-TextLinkedList b1_t4;
-TextLinkedList b1_t5;
-TextLinkedList b1_t6;
-TextLinkedList b1_t7;
-TextLinkedList b1_t8;
-TextLinkedList b1_t9;
-TextLinkedList b1_t10;
-TextLinkedList b1_t11;
-TextLinkedList b1_t12;
-TextLinkedList b1_t13;
-TextLinkedList b1_t14;
-TextLinkedList b1_t15;
-TextLinkedList b1_t16;
-
-
-TextLinkedList b2_t1;
-TextLinkedList b2_t2;
-TextLinkedList b2_t3;
-TextLinkedList b2_t4;
-TextLinkedList b2_t5;
-TextLinkedList b2_t6;
-TextLinkedList b2_t7;
-TextLinkedList b2_t8;
-TextLinkedList b2_t9;
-TextLinkedList b2_t10;
-TextLinkedList b2_t11;
-TextLinkedList b2_t12;
-TextLinkedList b2_t13;
-TextLinkedList b2_t14;
-TextLinkedList b2_t15;
-TextLinkedList b2_t16;
-TextLinkedList b2_t17;
-TextLinkedList b2_t18;
-TextLinkedList b2_t19;
-TextLinkedList b2_t21;
-TextLinkedList b2_t22;
-TextLinkedList b2_t23;
-TextLinkedList b2_t24;
-//===========================================================선택지==================================================================
-SelectLinkedList f1_s1 = { "[1]간부연구실로 간다",&f1_s2 };
 SelectLinkedList f1_s2 = { "[2]칸막이 밖으로 나간다",NULL };
+SelectLinkedList f1_s1 = { "[1]간부연구실로 간다",&f1_s2 };
 //선택지 동편
-SelectLinkedList e1_s1 = { "[1]화장실로 간다",&e1_s2 };
-SelectLinkedList e1_s2 = { "[2]세탁실로 간다",&e1_s3 };
-SelectLinkedList e1_s3 = { "[3]행정반으로 간다",&e1_s4 };
 SelectLinkedList e1_s4 = { "[4]중앙복도로 간다",NULL };
+SelectLinkedList e1_s3 = { "[3]행정반으로 간다",&e1_s4 };
+SelectLinkedList e1_s2 = { "[2]세탁실로 간다",&e1_s3 };
+SelectLinkedList e1_s1 = { "[1]화장실로 간다",&e1_s2 };
 //선택지 중앙복도(처음)
 //공용 선택지 fight, run
 //선택지 중앙복도(처음x)
-SelectLinkedList c1_s1 = { "[1]동편으로 간다",&c1_s2 };
-SelectLinkedList c1_s2 = { "[2]서편으로 간다",&c1_s3 };
-SelectLinkedList c1_s3 = { "[3]1층으로 간다",&c1_s4 };
 SelectLinkedList c1_s4 = { "[4]중앙복도로 간다",NULL };
+SelectLinkedList c1_s3 = { "[3]1층으로 간다",&c1_s4 };
+SelectLinkedList c1_s2 = { "[2]서편으로 간다",&c1_s3 };
+SelectLinkedList c1_s1 = { "[1]동편으로 간다",&c1_s2 };
 
-SelectLinkedList cr_s1 = { "[1]서편으로 이동한다",&cr_s2 };
-SelectLinkedList cr_s2 = { "[2]1층으로 이동한다" ,&cr_s3 };
-SelectLinkedList cr_s3 = { "[3]옥상으로 이동한다",&cr_s4 };
 SelectLinkedList cr_s4 = { "[4]동편으로 이동한다" ,NULL };
+SelectLinkedList cr_s3 = { "[3]옥상으로 이동한다",&cr_s4 };
+SelectLinkedList cr_s2 = { "[2]1층으로 이동한다" ,&cr_s3 };
+SelectLinkedList cr_s1 = { "[1]서편으로 이동한다",&cr_s2 };
 
-SelectLinkedList c3_s1 = { "[1]서편으로 도망간다",&c3_s2 };
 SelectLinkedList c3_s2 = { "[2]1층으로 도망간다" ,NULL };
+SelectLinkedList c3_s1 = { "[1]서편으로 도망간다",&c3_s2 };
 
-SelectLinkedList c21_s1 = { "[1]서편으로 이동한다",&c21_s2 };
-SelectLinkedList c21_s2 = { "[2]1층으로 이동한다" ,&c21_s3 };
-SelectLinkedList c21_s3 = { "[3]옥상으로 이동한다",&c21_s4 };
 SelectLinkedList c21_s4 = { "[4]동편으로 이동한다" ,NULL };
+SelectLinkedList c21_s3 = { "[3]옥상으로 이동한다",&c21_s4 };
+SelectLinkedList c21_s2 = { "[2]1층으로 이동한다" ,&c21_s3 };
+SelectLinkedList c21_s1 = { "[1]서편으로 이동한다",&c21_s2 };
 
 //선택지 서편
-SelectLinkedList w1_s1 = { "[1]1-1반으로 간다",&w1_s2 };
-SelectLinkedList w1_s2 = { "[2]1-2반으로 간다",&w1_s3 };
-SelectLinkedList w1_s3 = { "[3]1-3반으로 간다",&w1_s4 };
-SelectLinkedList w1_s4 = { "[4]2-1반으로 간다",&w1_s5 };
-SelectLinkedList w1_s5 = { "[5]2-2반으로 간다",&w1_s6 };
-SelectLinkedList w1_s6 = { "[6]2-3반으로 간다",&w1_s7 };
 SelectLinkedList w1_s7 = { "[7]중앙복도로 간다",NULL };
+SelectLinkedList w1_s6 = { "[6]2-3반으로 간다",&w1_s7 };
+SelectLinkedList w1_s5 = { "[5]2-2반으로 간다",&w1_s6 };
+SelectLinkedList w1_s4 = { "[4]2-1반으로 간다",&w1_s5 };
+SelectLinkedList w1_s3 = { "[3]1-3반으로 간다",&w1_s4 };
+SelectLinkedList w1_s2 = { "[2]1-2반으로 간다",&w1_s3 };
+SelectLinkedList w1_s1 = { "[1]1-1반으로 간다",&w1_s2 };
 
 //선택지 1층
-SelectLinkedList p1_s1 = { "[1]인사과로 간다",&p1_s2 };
-SelectLinkedList p1_s2 = { "[2]군수과로 간다",&p1_s3 };
-SelectLinkedList p1_s3 = { "[3]대대장실로 간다",&p1_s4 };
-SelectLinkedList p1_s4 = { "[4]지휘통제실로 간다",&p1_s5 };
-SelectLinkedList p1_s5 = { "[5]주임원사실로 간다",&p1_s6 };
-SelectLinkedList p1_s6 = { "[6]통신물자 창고로 간다",&p1_s7 };
-SelectLinkedList p1_s7 = { "[7]총기함 실로 간다",&p1_s8 };
 SelectLinkedList p1_s8 = { "[8]중앙복도로 간다",NULL };
+SelectLinkedList p1_s7 = { "[7]총기함 실로 간다",&p1_s8 };
+SelectLinkedList p1_s6 = { "[6]통신물자 창고로 간다",&p1_s7 };
+SelectLinkedList p1_s5 = { "[5]주임원사실로 간다",&p1_s6 };
+SelectLinkedList p1_s4 = { "[4]지휘통제실로 간다",&p1_s5 };
+SelectLinkedList p1_s3 = { "[3]대대장실로 간다",&p1_s4 };
+SelectLinkedList p1_s2 = { "[2]군수과로 간다",&p1_s3 };
+SelectLinkedList p1_s1 = { "[1]인사과로 간다",&p1_s2 };
 
-SelectLinkedList p68_s1 = { "[1]숨는다",&p68_s2 };
 SelectLinkedList p68_s2 = { "[2]도망친다",NULL };
+SelectLinkedList p68_s1 = { "[1]숨는다",&p68_s2 };
 
 //선택지 옥상
 
-SelectLinkedList r2_s1 = { "[1]통신망을 개통한다",&r2_s2 };
 SelectLinkedList r2_s2 = { "[2]2층 중앙복도로 내려간다",NULL };
+SelectLinkedList r2_s1 = { "[1]통신망을 개통한다",&r2_s2 };
 
 
-SelectLinkedList r31_s1 = { "[1]통신보안, 여기는 11사단 통신대대, 생존자 1명 대기중, 구조 바람.",&r31_s2 };
-SelectLinkedList r31_s2 = { "[2]여보세요??살려주세요!! 여기 사람이 있다구요!!!",&r31_s3 };
-SelectLinkedList r31_s3 = { "[3]당직 사령한테 연결해.빨리.",&r31_s4 };
 SelectLinkedList r31_s4 = { "[4]제가 통신대대 병장 박전역인데, 지금 옥상에 있거든요? 빨리 구하러 와주세요.빨리요",NULL };
+SelectLinkedList r31_s3 = { "[3]당직 사령한테 연결해.빨리.",&r31_s4 };
+SelectLinkedList r31_s2 = { "[2]여보세요??살려주세요!! 여기 사람이 있다구요!!!",&r31_s3 };
+SelectLinkedList r31_s1 = { "[1]통신보안, 여기는 11사단 통신대대, 생존자 1명 대기중, 구조 바람.",&r31_s2 };
 
 
 //선택지 공통
@@ -649,362 +243,358 @@ SelectLinkedList fight = { "[1]맞서 싸운다",&run };
 //
 //
 //텍스트 격리생활관
-TextLinkedList f1_t1 = { "격리생활관에서 나왔다.",&f1_t2 };
-TextLinkedList f1_t2 = { "복도 방향으로 칸막이가 막고있다.",&f1_t3 };
 TextLinkedList f1_t3 = { "옆에는 간부연구실이 보인다.",NULL };
+TextLinkedList f1_t2 = { "복도 방향으로 칸막이가 막고있다.",&f1_t3 };
+TextLinkedList f1_t1 = { "격리생활관에서 나왔다.",&f1_t2 };
 
-TextLinkedList f2_t1 = { "간부연구실에 들어왔다.",&f2_t2 };
 TextLinkedList f2_t2 = { "코로나 사태 이후로 창고로 사용되는 것 같다.",NULL };
+TextLinkedList f2_t1 = { "간부연구실에 들어왔다.",&f2_t2 };
 
 TextLinkedList f3_t1 = { "칸막이 문에 자물쇠가 걸려있는 것 같다.",NULL };
 
 TextLinkedList f21_t1 = { "칸막이 열쇠를 발견했다.",NULL };
 
-TextLinkedList f31_t1 = { "칸막이가 열렸다.",&f31_t2 };
 TextLinkedList f31_t2 = { "밖으로 나가자.",NULL };
+TextLinkedList f31_t1 = { "칸막이가 열렸다.",&f31_t2 };
 
-TextLinkedList f32_t1 = { "칸막이 열쇠가 필요하다.",&f32_t2 };
 TextLinkedList f32_t2 = { "열쇠는 주변에서 찾을 수 있을 것 같다.",NULL };
+TextLinkedList f32_t1 = { "칸막이 열쇠가 필요하다.",&f32_t2 };
 
 //텍스트 동편
-TextLinkedList e1_t1 = { "저 멀리 복도 중앙에 사람 형체들이 보인다.",&e1_t2 };
-TextLinkedList e1_t2 = { "역광 때문에 어둡게 보이지만 정상은 아닌 것 같다.",&e1_t3 };
-TextLinkedList e1_t3 = { "왼쪽에는 행정반이 보인다.",&e1_t4 };
 TextLinkedList e1_t4 = { "오른쪽에는 화장실과 세탁실이 있다.",NULL };
+TextLinkedList e1_t3 = { "왼쪽에는 행정반이 보인다.",&e1_t4 };
+TextLinkedList e1_t2 = { "역광 때문에 어둡게 보이지만 정상은 아닌 것 같다.",&e1_t3 };
+TextLinkedList e1_t1 = { "저 멀리 복도 중앙에 사람 형체들이 보인다.",&e1_t2 };
 
-TextLinkedList e2_t1 = { "퀴퀴한 냄새가 진동한다.",&e2_t2 };
 TextLinkedList e2_t2 = { "몇일 동안 청소를 못한 모양이다",NULL };
+TextLinkedList e2_t1 = { "퀴퀴한 냄새가 진동한다.",&e2_t2 };
 
-TextLinkedList e21_t1 = { "부러진 대걸레 자루를 발견했다.",&e21_t2 };
 TextLinkedList e21_t2 = { "무기로 사용할 수 있을 것 같다.",NULL };
+TextLinkedList e21_t1 = { "부러진 대걸레 자루를 발견했다.",&e21_t2 };
 
-TextLinkedList e3_t1 = { "세탁기 위에 빨랫감이 그대로 쌓여있다.",&e3_t1 };
 TextLinkedList e3_t2 = { "창문 밖으로 좀비들이 돌아다니는 모습이 보인다.",NULL };
+TextLinkedList e3_t1 = { "세탁기 위에 빨랫감이 그대로 쌓여있다.",&e3_t1 };
 
 TextLinkedList e31_t1 = { "차갑게 식은 냉동 만두를 발견했다.",NULL };
 
-TextLinkedList e4_t1 = { "아무 인기척도 느껴지지 않는다.",&e4_t2 };
-TextLinkedList e4_t2 = { "어디선가 라디오 소리가 작게 들린다.",&e4_t3 };
-TextLinkedList e4_t3 = { "...당국은 내일인 6월 14일부터 대대적인 좀비 사태 대응 포격 감행 결정...",&e4_t4 };
 TextLinkedList e4_t4 = { "불길한 예감이 든다...빨리 움직여야 할 것 같다.",NULL };
+TextLinkedList e4_t3 = { "...당국은 내일인 6월 14일부터 대대적인 좀비 사태 대응 포격 감행 결정...",&e4_t4 };
+TextLinkedList e4_t2 = { "어디선가 라디오 소리가 작게 들린다.",&e4_t3 };
+TextLinkedList e4_t1 = { "아무 인기척도 느껴지지 않는다.",&e4_t2 };
 
-TextLinkedList e41_t1 = { "열쇠를 발견했다.",&e41_t2 };
 TextLinkedList e41_t2 = { "주기가 되어있지만 글씨가 번져서 잘 안보인다.'...상'",NULL };
+TextLinkedList e41_t1 = { "열쇠를 발견했다.",&e41_t2 };
 
 //텍스트 중앙 복도
-TextLinkedList c1_t1 = { "복도 중앙에 좀비 무리가 있다.",&c1_t2 };
-TextLinkedList c1_t2 = { "익숙한 얼굴이 보인다..",&c1_t3 };
-TextLinkedList c1_t3 = { "설마 ㅅ서..성...윤모..?",&c1_t4 };
-TextLinkedList c1_t4 = { "내 알동기 윤모..어쩌다 이렇게...",&c1_t5 };
-TextLinkedList c1_t5 = { "하지만 아는 척 할 수는 없을 것 같다.",&c1_t6 };
 TextLinkedList c1_t6 = { "저쪽에서 먼저 나의 존재를 알아챈 것 같다.",NULL };
+TextLinkedList c1_t5 = { "하지만 아는 척 할 수는 없을 것 같다.",&c1_t6 };
+TextLinkedList c1_t4 = { "내 알동기 윤모..어쩌다 이렇게...",&c1_t5 };
+TextLinkedList c1_t3 = { "설마 ㅅ서..성...윤모..?",&c1_t4 };
+TextLinkedList c1_t2 = { "익숙한 얼굴이 보인다..",&c1_t3 };
+TextLinkedList c1_t1 = { "복도 중앙에 좀비 무리가 있다.",&c1_t2 };
 
-TextLinkedList cr_t1 = { "//2층 중앙 복도//",&cr_t2 };
-TextLinkedList cr_t2 = { "좀비는 보이지 않는다.",&cr_t3 };
 TextLinkedList cr_t3 = { "일정한 기계음이 조금 더 크게 들린다.",NULL };
+TextLinkedList cr_t2 = { "좀비는 보이지 않는다.",&cr_t3 };
+TextLinkedList cr_t1 = { "//2층 중앙 복도//",&cr_t2 };
 
-TextLinkedList c3_t1 = { "이건 절대 도망치는게 아니다.",&c3_t2 };
-TextLinkedList c3_t2 = { "작전상 후퇴일뿐.",&c3_t3 };
 TextLinkedList c3_t3 = { "아무튼 아니다.",NULL };
+TextLinkedList c3_t2 = { "작전상 후퇴일뿐.",&c3_t3 };
+TextLinkedList c3_t1 = { "이건 절대 도망치는게 아니다.",&c3_t2 };
 
 TextLinkedList c2_t1 = { "윤모는 인간이었을 때도 나약했으니 충분히 승산이 있을 것 같다.",NULL };
 
 
-TextLinkedList c21_t1 = { "윤모야 미안하다..하지만 어쩔 수 없었다.",&c21_t2 };
-TextLinkedList c21_t2 = { "부러진 대걸레로 숨통을 끊었다.",&c21_t3 };
-TextLinkedList c21_t3 = { "대걸레가 꽂힌 채로 쓰러졌다.",&c21_t4 };
-TextLinkedList c21_t4 = { "더 이상 미동이 없다.",&c21_t5 };
 TextLinkedList c21_t5 = { "이제 다른 곳으로 이동해야 할 것 같다.",NULL };
+TextLinkedList c21_t4 = { "더 이상 미동이 없다.",&c21_t5 };
+TextLinkedList c21_t3 = { "대걸레가 꽂힌 채로 쓰러졌다.",&c21_t4 };
+TextLinkedList c21_t2 = { "부러진 대걸레로 숨통을 끊었다.",&c21_t3 };
+TextLinkedList c21_t1 = { "윤모야 미안하다..하지만 어쩔 수 없었다.",&c21_t2 };
 
-TextLinkedList c22_t1 = { "무기 없이는 무리인 것 같다.",&c22_t2 };
-TextLinkedList c22_t2 = { "내가 알 던 윤모가 아니다.",&c22_t3 };
 TextLinkedList c22_t3 = { "지금이라도 도망가야 할 것 같다.",NULL };
+TextLinkedList c22_t2 = { "내가 알 던 윤모가 아니다.",&c22_t3 };
+TextLinkedList c22_t1 = { "무기 없이는 무리인 것 같다.",&c22_t2 };
 
 //텍스트 서편
-TextLinkedList w1_t1 = { "1소대와 2소대 생활관들이 보인다.",&w1_t2 };
-TextLinkedList w1_t2 = { "쓸만한 물건들이 남아 있을지도 모른다.",&w1_t3 };
 TextLinkedList w1_t3 = { "어쩌면 다른 생존자가 있을 수도 있을 것 같다.",NULL };
+TextLinkedList w1_t2 = { "쓸만한 물건들이 남아 있을지도 모른다.",&w1_t3 };
+TextLinkedList w1_t1 = { "1소대와 2소대 생활관들이 보인다.",&w1_t2 };
 
-TextLinkedList w2_t1 = { "1 - 1반..복도 제일 끝 생활관이라 그런지 햇볕이 잘 들어오지 않는다.",&w2_t2 };
 TextLinkedList w2_t2 = { "벽 군데군데 곰팡이가 피어있다.",NULL };
+TextLinkedList w2_t1 = { "1 - 1반..복도 제일 끝 생활관이라 그런지 햇볕이 잘 들어오지 않는다.",&w2_t2 };
 
 TextLinkedList w21_t1 = { "[손전등]을 발견했다.",NULL };
 
-TextLinkedList w3_t1 = { "1-2반..항상 물만 묻히고 안씻는 이혜성 상병이 있던 곳이다.",&w3_t2 };
 TextLinkedList w3_t2 = { "들어서자마자 꼬랑내 때문에 구역질이 난다.",NULL };
+TextLinkedList w3_t1 = { "1-2반..항상 물만 묻히고 안씻는 이혜성 상병이 있던 곳이다.",&w3_t2 };
 
 TextLinkedList w31_t1 = { "[건빵 한 봉지]를 발견했다.",NULL };
 
-TextLinkedList w4_t1 = { "1 - 3반..항상 시끄러운 반이었지만 지금은 매우 조용하다.",&w4_t2 };
-TextLinkedList w4_t2 = { "이상할 정도로 조용한 것이 좀비가 있는 것 같다.",&w4_t3 };
 TextLinkedList w4_t3 = { "좀비가 구석 한켠에 처박혀 앉아 있다.",NULL };
+TextLinkedList w4_t2 = { "이상할 정도로 조용한 것이 좀비가 있는 것 같다.",&w4_t3 };
+TextLinkedList w4_t1 = { "1 - 3반..항상 시끄러운 반이었지만 지금은 매우 조용하다.",&w4_t2 };
 
-TextLinkedList w41_t1 = { "살...금...살...금...",&w4_t2 };
-TextLinkedList w41_t2 = { "푸드드득 우직 꾸엑!",&w4_t3 };
-TextLinkedList w41_t3 = { "좀비의 목을 힘껏 비틀어 제껴버렸다.",&w41_t4 };
 TextLinkedList w41_t4 = { "사시나무처럼 떨고 있다.",NULL };
+TextLinkedList w41_t3 = { "좀비의 목을 힘껏 비틀어 제껴버렸다.",&w41_t4 };
+TextLinkedList w41_t2 = { "푸드드득 우직 꾸엑!",&w4_t3 };
+TextLinkedList w41_t1 = { "살...금...살...금...",&w4_t2 };
 
-TextLinkedList w42_t1 = { "조용히 나가야겠다.",&w42_t2 };
-TextLinkedList w42_t2 = { "한이 많이 쌓인 좀비임이 분명하다.",&w42_t3 };
 TextLinkedList w42_t3 = { "최대한 소리가 안나게 문을 닫고 나왔다.",NULL };
+TextLinkedList w42_t2 = { "한이 많이 쌓인 좀비임이 분명하다.",&w42_t3 };
+TextLinkedList w42_t1 = { "조용히 나가야겠다.",&w42_t2 };
 
 TextLinkedList w43_t1 = { "[몽키 스패너]를 발견했다.",NULL };
 
-TextLinkedList w5_t1 = { "2 - 1반..기독교 신자가 유난히 많았던 반..",&w5_t2 };
-TextLinkedList w5_t2 = { "아무리 둘러봐도 성경과 십자가는 안보인다.",&w5_t3 };
 TextLinkedList w5_t3 = { "하느님이 아니라 싸이버거를 굳게 믿었던 것 같다.",NULL };
+TextLinkedList w5_t2 = { "아무리 둘러봐도 성경과 십자가는 안보인다.",&w5_t3 };
+TextLinkedList w5_t1 = { "2 - 1반..기독교 신자가 유난히 많았던 반..",&w5_t2 };
 
-TextLinkedList w51_t1 = { "꾀병 환자의 [붕대]를 발견했다.",&w51_t2 };
 TextLinkedList w51_t2 = { "부상이 생겼을 때 유용하게 사용할 수 있을 것이다.",NULL };
+TextLinkedList w51_t1 = { "꾀병 환자의 [붕대]를 발견했다.",&w51_t2 };
 
 
-TextLinkedList w6_t1 = { "2-2반이라.....",&w6_t2 };
-TextLinkedList w6_t2 = { "끼-----------이이이이이익--------------",&w6_t3 };
 TextLinkedList w6_t3 = { "문을 열자마자 숨어있던 좀비가 공격해온다!",NULL };
+TextLinkedList w6_t2 = { "끼-----------이이이이이익--------------",&w6_t3 };
+TextLinkedList w6_t1 = { "2-2반이라.....",&w6_t2 };
 
-TextLinkedList w61_t1 = { "잘못하면 목을 내어주고 좀비로 진급할 뻔했다.",&w61_t2 };
-TextLinkedList w61_t2 = { "반사신경으로 재빠르게 공격을 피했다.",&w61_t3 };
 TextLinkedList w61_t3 = { "좀비가 멍청해서 그대로 벽에 머리를 박고 죽었다.",NULL };
+TextLinkedList w61_t2 = { "반사신경으로 재빠르게 공격을 피했다.",&w61_t3 };
+TextLinkedList w61_t1 = { "잘못하면 목을 내어주고 좀비로 진급할 뻔했다.",&w61_t2 };
 
-TextLinkedList w62_t1 = { "잘못하면 목을 내어주고 좀비로 진급할 뻔했다.",&w62_t2 };
-TextLinkedList w62_t2 = { "바로 문을 닫고 나왔다.",&w62_t3 };
-TextLinkedList w62_t3 = { "공격을 피하느라 벽에 몸을 부딛혔다.",&w62_t4 };
-TextLinkedList w62_t4 = { "더 이상 쫓아오지는 않는 것 같다.",&w62_t5 };
 TextLinkedList w62_t5 = { "경미한 부상을 입었다.",NULL };
+TextLinkedList w62_t4 = { "더 이상 쫓아오지는 않는 것 같다.",&w62_t5 };
+TextLinkedList w62_t3 = { "공격을 피하느라 벽에 몸을 부딛혔다.",&w62_t4 };
+TextLinkedList w62_t2 = { "바로 문을 닫고 나왔다.",&w62_t3 };
+TextLinkedList w62_t1 = { "잘못하면 목을 내어주고 좀비로 진급할 뻔했다.",&w62_t2 };
 
 TextLinkedList w63_t1 = { "꼴초의 [터보 라이터]를 발견했다.",NULL };
 
-TextLinkedList w7_t1 = { "2-3반..알코올 냄새가 코를 뻥 뚫어주는 것 같다.",&w4_t2 };
-TextLinkedList w7_t2 = { "항상 청결한 생활관이다.",&w4_t3 };
 TextLinkedList w7_t3 = { "하느님이 아니라 싸이버거를 굳게 믿었던 것 같다.",NULL };
+TextLinkedList w7_t2 = { "항상 청결한 생활관이다.",&w4_t3 };
+TextLinkedList w7_t1 = { "2-3반..알코올 냄새가 코를 뻥 뚫어주는 것 같다.",&w4_t2 };
 
 TextLinkedList w71_t1 = { "[손 소독제]를 발견했다.",NULL };
 
 //텍스트 1층
 
-TextLinkedList p1_t1 = { "곳곳에 혈흔 자국들이 보인다.",&p1_t2 };
-TextLinkedList p1_t2 = { "아까부터 계속 미세한 기계음이 반복적으로 들린다..",&p1_t3 };
 TextLinkedList p1_t3 = { "그 외에는 침묵이 가득하다." ,NULL };
+TextLinkedList p1_t2 = { "아까부터 계속 미세한 기계음이 반복적으로 들린다..",&p1_t3 };
+TextLinkedList p1_t1 = { "곳곳에 혈흔 자국들이 보인다.",&p1_t2 };
 
-TextLinkedList p2_t1 = { "인사과장이 1년 동안 결산하지 않은 부대 체육 리그 점수표가 정면에 보인다.",&p2_t2 };
-TextLinkedList p2_t2 = { "한켠에는 아직 개봉되지 않은 택배 상자들이 쌓여있다.",&p2_t3 };
 TextLinkedList p2_t3 = { "어딘가에 총기함키가 있을 것이다." ,NULL };
+TextLinkedList p2_t2 = { "한켠에는 아직 개봉되지 않은 택배 상자들이 쌓여있다.",&p2_t3 };
+TextLinkedList p2_t1 = { "인사과장이 1년 동안 결산하지 않은 부대 체육 리그 점수표가 정면에 보인다.",&p2_t2 };
 
 TextLinkedList p21_t1 = { "[총기함키]를 발견했다." ,NULL };
 
-TextLinkedList p3_t1 = { "대대장의 총애를 받던 군수과장이 있던 곳이다.",&p3_t2 };
-TextLinkedList p3_t2 = { "지독한 사람이었다.",&p3_t3 };
-TextLinkedList p3_t3 = { "책상 위에 군수과장 아들내미 사진이 보인다." ,&p3_t4 };
-TextLinkedList p3_t4 = { "옆에는 달력이 있다." ,&p3_t5 };
 TextLinkedList p3_t5 = { "[6월 24일,대대장님 생신★]" ,NULL };
+TextLinkedList p3_t4 = { "옆에는 달력이 있다." ,&p3_t5 };
+TextLinkedList p3_t3 = { "책상 위에 군수과장 아들내미 사진이 보인다." ,&p3_t4 };
+TextLinkedList p3_t2 = { "지독한 사람이었다.",&p3_t3 };
+TextLinkedList p3_t1 = { "대대장의 총애를 받던 군수과장이 있던 곳이다.",&p3_t2 };
 
 TextLinkedList p31_t1 = { "쓸 만한 물건이 없는 것 같다." ,NULL };
 
 TextLinkedList p4_t1 = { "문이 잠겨있다....[부재중]..." ,NULL };
 
-TextLinkedList p5_t1 = { "항상 간부들이 북적거리던 곳이다.",&p5_t2 };
-TextLinkedList p5_t2 = { "CCTV 감시 화면 곳곳에 좀비들 모습이 보인다..",&p5_t3 };
-TextLinkedList p5_t3 = { "옥상에는 좀비가 없는 것 같다." ,&p5_t4 };
-TextLinkedList p5_t4 = { "그런데... 뭔가 이상하다." ,&p5_t5 };
-TextLinkedList p5_t5 = { "내가 보이는 화면에 이상한 형체가 같이 있다." ,&p5_t6 };
-TextLinkedList p5_t6 = { "쿠당탕!" ,&p5_t7 };
 TextLinkedList p5_t7 = { "갑자기 뒤에서 좀비 한 마리가 달려든다." ,NULL };
+TextLinkedList p5_t6 = { "쿠당탕!" ,&p5_t7 };
+TextLinkedList p5_t5 = { "내가 보이는 화면에 이상한 형체가 같이 있다." ,&p5_t6 };
+TextLinkedList p5_t4 = { "그런데... 뭔가 이상하다." ,&p5_t5 };
+TextLinkedList p5_t3 = { "옥상에는 좀비가 없는 것 같다." ,&p5_t4 };
+TextLinkedList p5_t2 = { "CCTV 감시 화면 곳곳에 좀비들 모습이 보인다..",&p5_t3 };
+TextLinkedList p5_t1 = { "항상 간부들이 북적거리던 곳이다.",&p5_t2 };
 
 TextLinkedList p51_t1 = { "좀비가 매우 강력해보인다." ,NULL };
 
-TextLinkedList p52_t1 = { "간신히 제압했다." ,&p52_t2 };
-TextLinkedList p52_t2 = { "하마터면 엔딩도 보기전에 죽을 뻔했다." ,&p52_t3 };
-TextLinkedList p52_t3 = { "머리가 조금 찢어진 것 같다." ,&p52_t4 };
 TextLinkedList p52_t4 = { "큰 부상을 입었다." ,NULL };
+TextLinkedList p52_t3 = { "머리가 조금 찢어진 것 같다." ,&p52_t4 };
+TextLinkedList p52_t2 = { "하마터면 엔딩도 보기전에 죽을 뻔했다." ,&p52_t3 };
+TextLinkedList p52_t1 = { "간신히 제압했다." ,&p52_t2 };
 
 
-TextLinkedList p53_t1 = { "좀비가 입고있던 전투복에서 [열쇠]를 발견했다." ,&p53_t2 };
 TextLinkedList p53_t2 = { "무슨 열쇠인지는 모르겠다." ,NULL };
+TextLinkedList p53_t1 = { "좀비가 입고있던 전투복에서 [열쇠]를 발견했다." ,&p53_t2 };
 
-TextLinkedList p54_t1 = { "맨손으로는 무리인 것 같다." ,&p54_t2 };
-TextLinkedList p54_t2 = { "자세히 보니 주임원사님의 얼굴을 꼭 빼닮은 것 같다." ,&p54_t3 };
-TextLinkedList p54_t3 = { "지금이라도 도망쳐야 할 것 같다." ,&p54_t4 };
-TextLinkedList p54_t4 = { "어라..?점점 의식이 흐려진다." ,&p54_t5 };
 TextLinkedList p54_t5 = { "게임오버" ,NULL };
+TextLinkedList p54_t4 = { "어라..?점점 의식이 흐려진다." ,&p54_t5 };
+TextLinkedList p54_t3 = { "지금이라도 도망쳐야 할 것 같다." ,&p54_t4 };
+TextLinkedList p54_t2 = { "자세히 보니 주임원사님의 얼굴을 꼭 빼닮은 것 같다." ,&p54_t3 };
+TextLinkedList p54_t1 = { "맨손으로는 무리인 것 같다." ,&p54_t2 };
 
 TextLinkedList p6_t1 = { "주임 원사실...[부재중]..." ,NULL };
 
-TextLinkedList p61_t1 = { "철컥 철컥 문이 잠겨있다." ,&p61_t2 };
-TextLinkedList p61_t2 = { "좀비에게서 얻은 열쇠로 문이 열렸다." ,&p61_t3 };
-TextLinkedList p61_t3 = { "안으로 들어갈 수록 커피 원두향이 진하게 난다." ,&p61_t4 };
 TextLinkedList p61_t4 = { "잡다한 용접 도구들이 눈에 띈다.",NULL };
+TextLinkedList p61_t3 = { "안으로 들어갈 수록 커피 원두향이 진하게 난다." ,&p61_t4 };
+TextLinkedList p61_t2 = { "좀비에게서 얻은 열쇠로 문이 열렸다." ,&p61_t3 };
+TextLinkedList p61_t1 = { "철컥 철컥 문이 잠겨있다." ,&p61_t2 };
 
-TextLinkedList p62_t1 = { "철컥 철컥 문이 잠겨있다." ,&p62_t2 };
 TextLinkedList p62_t2 = { "열쇠가 필요하다." ,NULL };
+TextLinkedList p62_t1 = { "철컥 철컥 문이 잠겨있다." ,&p62_t2 };
 
-TextLinkedList p63_t1 = { "금고가 보인다." ,&p63_t2 };
-TextLinkedList p63_t2 = { "하지만 비밀번호로 잠겨있다." ,&p63_t3 };
 TextLinkedList p63_t3 = { "비밀번호 입력: [_][_][_][_]" ,NULL };
+TextLinkedList p63_t2 = { "하지만 비밀번호로 잠겨있다." ,&p63_t3 };
+TextLinkedList p63_t1 = { "금고가 보인다." ,&p63_t2 };
 
-TextLinkedList p64_t1 = { "띠-띠-띠로리--" ,&p64_t2 };
-TextLinkedList p64_t2 = { "금고가 열렸다!!!" , &p64_t3 };
-TextLinkedList p64_t3 = { "중요해보이는 기밀 문서들이 잔뜩 있다." ,&p64_t4 };
 TextLinkedList p64_t4 = { "[권총]과 [비상용 탄 8발]을 발견했다." ,NULL };
+TextLinkedList p64_t3 = { "중요해보이는 기밀 문서들이 잔뜩 있다." ,&p64_t4 };
+TextLinkedList p64_t2 = { "금고가 열렸다!!!" , &p64_t3 };
+TextLinkedList p64_t1 = { "띠-띠-띠로리--" ,&p64_t2 };
 
-TextLinkedList p65_t1 = { "삐-비-익" ,&p65_t2 };
 TextLinkedList p65_t2 = { "이 비밀번호가 아닌 것 같다.." ,NULL };
+TextLinkedList p65_t1 = { "삐-비-익" ,&p65_t2 };
 
-TextLinkedList p67_t1 = { "삐--용--삐--용--삐--용--삐--용-- " ,&p67_t2 };
-TextLinkedList p67_t2 = { "!!!갑자기 비상벨이 울린다." ,&p67_t3 };
 TextLinkedList p67_t3 = { "좀비들이 몰려오는 소리가 들린다." ,NULL };
+TextLinkedList p67_t2 = { "!!!갑자기 비상벨이 울린다." ,&p67_t3 };
+TextLinkedList p67_t1 = { "삐--용--삐--용--삐--용--삐--용-- " ,&p67_t2 };
 
 TextLinkedList p68_t1 = { "빨리 도망치거나 숨어야 할 것 같다." ,NULL };
 
-TextLinkedList p69_t1 = { "일단 락커에 몸을 숨겼다." ,&p67_t2 };
-TextLinkedList p69_t2 = { "좀비들의 발소리가 점점 가까워진다." ,&p67_t3 };
-TextLinkedList p69_t3 = { "숨을 참아도 심장 소리는 더 커지는 것 같다...." ,&p69_t4 };
-TextLinkedList p69_t4 = { "쿵쾅쿵쾅쿵쾅쿵쾅쿵쾅쿵쿵쾅쾅...." ,&p69_t5 };
-TextLinkedList p69_t5 = { "쿵쾅..쿵쾅..쿵..쿵..쿵...쾅...쾅...." ,&p69_t6 };
-TextLinkedList p69_t6 = { "쿵...쾅...쿵...쾅...쿵.........." ,&p69_t7 };
 TextLinkedList p69_t7 = { "휴 다행히 좀비 소리가 다시 멀어졌다." ,NULL };
+TextLinkedList p69_t6 = { "쿵...쾅...쿵...쾅...쿵.........." ,&p69_t7 };
+TextLinkedList p69_t5 = { "쿵쾅..쿵쾅..쿵..쿵..쿵...쾅...쾅...." ,&p69_t6 };
+TextLinkedList p69_t4 = { "쿵쾅쿵쾅쿵쾅쿵쾅쿵쾅쿵쿵쾅쾅...." ,&p69_t5 };
+TextLinkedList p69_t3 = { "숨을 참아도 심장 소리는 더 커지는 것 같다...." ,&p69_t4 };
+TextLinkedList p69_t2 = { "좀비들의 발소리가 점점 가까워진다." ,&p67_t3 };
+TextLinkedList p69_t1 = { "일단 락커에 몸을 숨겼다." ,&p67_t2 };
 
-TextLinkedList p610_t1 = { "황급히 주임원사실 밖으로 뛰쳐나왔다." ,&p610_t2 };
-TextLinkedList p610_t2 = { "하지만 이미 늦었다.." ,&p610_t3 };
-TextLinkedList p610_t3 = { "좀비들이 나의 앞을 가로막고 있다." ,&p610_t4 };
-TextLinkedList p610_t4 = { "으드득으드득..으드득으드득....." ,&p610_t5 };
 TextLinkedList p610_t5 = { "나는 목부터 발까지 뜯겨나갔다." ,NULL };
+TextLinkedList p610_t4 = { "으드득으드득..으드득으드득....." ,&p610_t5 };
+TextLinkedList p610_t3 = { "좀비들이 나의 앞을 가로막고 있다." ,&p610_t4 };
+TextLinkedList p610_t2 = { "하지만 이미 늦었다.." ,&p610_t3 };
+TextLinkedList p610_t1 = { "황급히 주임원사실 밖으로 뛰쳐나왔다." ,&p610_t2 };
 
-
-TextLinkedList p7_t1 = { "먼지로 뒤덮여 있어서 공기가 매캐하다." ,&p7_t2 };
-TextLinkedList p7_t2 = { "통신망 개통에 필요한 유지 장비들이 있다." ,&p7_t3 };
-TextLinkedList p7_t3 = { "옥상에 있는 통신 장비와 연결할 수 있다." ,&p7_t4 };
 TextLinkedList p7_t4 = { "외부와 연락하기 위해서 필요한 장비들을 가져가야 할 것 같다." ,NULL };
+TextLinkedList p7_t3 = { "옥상에 있는 통신 장비와 연결할 수 있다." ,&p7_t4 };
+TextLinkedList p7_t2 = { "통신망 개통에 필요한 유지 장비들이 있다." ,&p7_t3 };
+TextLinkedList p7_t1 = { "먼지로 뒤덮여 있어서 공기가 매캐하다." ,&p7_t2 };
 
-TextLinkedList p71_t1 = { "[노트북]과 [연결 포트]를 발견했다." ,&p71_t2 };
 TextLinkedList p71_t2 = { "망개통에 필요한 물품은 다 챙긴 것 같다." ,NULL };
+TextLinkedList p71_t1 = { "[노트북]과 [연결 포트]를 발견했다." ,&p71_t2 };
 
-TextLinkedList p8_t1 = { "총기함실이다." ,&p8_t2 };
-TextLinkedList p8_t2 = { "WD냄새와 쇳덩이 냄새들이 난다." ,&p8_t3 };
 TextLinkedList p8_t3 = { "총기함은 굳게 잠겨있다." ,NULL };
+TextLinkedList p8_t2 = { "WD냄새와 쇳덩이 냄새들이 난다." ,&p8_t3 };
+TextLinkedList p8_t1 = { "총기함실이다." ,&p8_t2 };
 
-TextLinkedList p81_t1 = { "총기함 열쇠로 문을 열었다." ,&p81_t2 };
-TextLinkedList p81_t2 = { "훈련 때문에 탄약은 없는 것 같다." ,&p81_t3 };
 TextLinkedList p81_t3 = { "[K2 소총]을 얻었다." ,NULL };
+TextLinkedList p81_t2 = { "훈련 때문에 탄약은 없는 것 같다." ,&p81_t3 };
+TextLinkedList p81_t1 = { "총기함 열쇠로 문을 열었다." ,&p81_t2 };
 
-TextLinkedList p82_t1 = { "총기함이 잠겨있다." ,&p82_t2 };
-TextLinkedList p82_t2 = { "총기함키가 필요하다." ,&p82_t3 };
 TextLinkedList p82_t3 = { "인사과에 가면 있을 것이다." ,NULL };
+TextLinkedList p82_t2 = { "총기함키가 필요하다." ,&p82_t3 };
+TextLinkedList p82_t1 = { "총기함이 잠겨있다." ,&p82_t2 };
 
 //텍스트 옥상
-TextLinkedList r1_t1 = { "옥상 문이 닫혀있다.",&r1_t2 };
-TextLinkedList r1_t2 = { "[ 관계자 외 출입금지]",&r1_t3 };
-TextLinkedList r1_t3 = { "철컥, 철컥,",&r1_t4 };
 TextLinkedList r1_t4 = { "열쇠가 필요할 것 같다.",NULL };
+TextLinkedList r1_t3 = { "철컥, 철컥,",&r1_t4 };
+TextLinkedList r1_t2 = { "[ 관계자 외 출입금지]",&r1_t3 };
+TextLinkedList r1_t1 = { "옥상 문이 닫혀있다.",&r1_t2 };
 
-TextLinkedList r2_t1 = { "옥상에 설치된 안테나 통신 장치들이 반복적인 기계음을 내고 있다.",&r2_t2 };
-TextLinkedList r2_t2 = { "다행히 통신 장비가 작동중인 것 같다.",&r2_t3 };
-TextLinkedList r2_t3 = { "통신망만 개통하면 외부와 연락이 가능할 것이다.",&r2_t4 };
 TextLinkedList r2_t4 = { "우우웅...우우웅...(반복적인 기계음)",NULL };
+TextLinkedList r2_t3 = { "통신망만 개통하면 외부와 연락이 가능할 것이다.",&r2_t4 };
+TextLinkedList r2_t2 = { "다행히 통신 장비가 작동중인 것 같다.",&r2_t3 };
+TextLinkedList r2_t1 = { "옥상에 설치된 안테나 통신 장치들이 반복적인 기계음을 내고 있다.",&r2_t2 };
 
-TextLinkedList r31_t1 = { "[...이더넷 연결중...]",&r31_t2 };
-TextLinkedList r31_t2 = { "[...국방망 연결중...]",&r31_t3 };
-TextLinkedList r31_t3 = { "[...무선 통신 체계 접속중...]",&r31_t4 };
-TextLinkedList r31_t4 = { "[접속 상태: 양호 ]",&r31_t5 };
-TextLinkedList r31_t5 = { "또로로로로로로...또로로로로로로...(신호 대기음) ",&r31_t6 };
 TextLinkedList r31_t6 = { "본부대 상병 김상명, 전화받았습니다~",NULL };
+TextLinkedList r31_t5 = { "또로로로로로로...또로로로로로로...(신호 대기음) ",&r31_t6 };
+TextLinkedList r31_t4 = { "[접속 상태: 양호 ]",&r31_t5 };
+TextLinkedList r31_t3 = { "[...무선 통신 체계 접속중...]",&r31_t4 };
+TextLinkedList r31_t2 = { "[...국방망 연결중...]",&r31_t3 };
+TextLinkedList r31_t1 = { "[...이더넷 연결중...]",&r31_t2 };
 
-TextLinkedList r32_t1 = { "역시 통신망 연결이 끊겨있다.",&r32_t1 };
-TextLinkedList r32_t2 = { "통신망 개통을 위한 장비는 1층 [통신물자 창고]에 있을 것이다.",&r32_t2 };
 TextLinkedList r32_t3 = { "우우웅...우우웅...(반복적인 기계음)",NULL };
+TextLinkedList r32_t2 = { "통신망 개통을 위한 장비는 1층 [통신물자 창고]에 있을 것이다.",&r32_t2 };
+TextLinkedList r32_t1 = { "역시 통신망 연결이 끊겨있다.",&r32_t1 };
 
-TextLinkedList r3_t1 = { "장비들은 정상적으로 작동하는 것 같다. ",&r3_t2 };
-TextLinkedList r3_t2 = { "통신망을 연결하려면 노트북과 연결 포트가 필요하다.",&r3_t3 };
 TextLinkedList r3_t3 = { "혹시 연결되어 있을 수도..?",NULL };
+TextLinkedList r3_t2 = { "통신망을 연결하려면 노트북과 연결 포트가 필요하다.",&r3_t3 };
+TextLinkedList r3_t1 = { "장비들은 정상적으로 작동하는 것 같다. ",&r3_t2 };
 
-TextLinkedList r4_t1 = { "뚜...뚜...뚜...",&r4_t2 };
-TextLinkedList r4_t2 = { "연결이 끊어졌다..",&r4_t3 };
-TextLinkedList r4_t3 = { "통신 장비 노드가 노후되어 연결이 불안정한 것 같다.",&r4_t4 };
 TextLinkedList r4_t4 = { " 더 이상 신호가 잡히지 않는다.",NULL };
+TextLinkedList r4_t3 = { "통신 장비 노드가 노후되어 연결이 불안정한 것 같다.",&r4_t4 };
+TextLinkedList r4_t2 = { "연결이 끊어졌다..",&r4_t3 };
+TextLinkedList r4_t1 = { "뚜...뚜...뚜...",&r4_t2 };
 
 //텍스트 엔딩
-TextLinkedList h1_t1 = { "어느정도 시간이 흐른 것 같다.",&h1_t2 };
-TextLinkedList h1_t2 = { "점점 석양이 지고, 태양빛이 붉게 무르익어 간다.",&h1_t3 };
-TextLinkedList h1_t3 = { "산 기슭을 훑고 지나오는 바람은 머나먼 곳으로 떠나는 것 같다.",&h1_t4 };
-TextLinkedList h1_t4 = { "여기에 존재하는 것은 나 자신과 좀비...",&h1_t5 };
-TextLinkedList h1_t5 = { "그리고 이제는 성가신 기계음의 반복적인 소음...",&h1_t6 };
-TextLinkedList h1_t6 = { "자신의 영역을 침범하는 낯선 소음과 경쟁하듯 간섭을 이룬다.",&h1_t7 };
-TextLinkedList h1_t7 = { "처음에는 이방인이 열세했지만 시간이 갈 수록 원주민을 압도한다.",&h1_t8 };
-TextLinkedList h1_t8 = { "이제는 더 이상 본래 원주민의 모습은 온데 간데 없고 이방인이 주인 자리를 차지했다.",&h1_t9 };
-TextLinkedList h1_t9 = { ".....도도도도도도도도도도도두도두도두도두도두두두",&h1_t10 };
-TextLinkedList h1_t10 = { "두두두두두두두두두두두두두두두두두두두두두두",&h1_t11 };
-TextLinkedList h1_t11 = { "눈을 떠보니 저 멀리 산 골짜기 위로 희망이 날아오고 있다.",&h1_t12 };
-TextLinkedList h1_t12 = { "구조 헬기다!",&h1_t13 };
 TextLinkedList h1_t13 = { "나는 살았다..",NULL };
+TextLinkedList h1_t12 = { "구조 헬기다!",&h1_t13 };
+TextLinkedList h1_t11 = { "눈을 떠보니 저 멀리 산 골짜기 위로 희망이 날아오고 있다.",&h1_t12 };
+TextLinkedList h1_t10 = { "두두두두두두두두두두두두두두두두두두두두두두",&h1_t11 };
+TextLinkedList h1_t9 = { ".....도도도도도도도도도도도두도두도두도두도두두두",&h1_t10 };
+TextLinkedList h1_t8 = { "이제는 더 이상 본래 원주민의 모습은 온데 간데 없고 이방인이 주인 자리를 차지했다.",&h1_t9 };
+TextLinkedList h1_t7 = { "처음에는 이방인이 열세했지만 시간이 갈 수록 원주민을 압도한다.",&h1_t8 };
+TextLinkedList h1_t6 = { "자신의 영역을 침범하는 낯선 소음과 경쟁하듯 간섭을 이룬다.",&h1_t7 };
+TextLinkedList h1_t5 = { "그리고 이제는 성가신 기계음의 반복적인 소음...",&h1_t6 };
+TextLinkedList h1_t4 = { "여기에 존재하는 것은 나 자신과 좀비...",&h1_t5 };
+TextLinkedList h1_t3 = { "산 기슭을 훑고 지나오는 바람은 머나먼 곳으로 떠나는 것 같다.",&h1_t4 };
+TextLinkedList h1_t2 = { "점점 석양이 지고, 태양빛이 붉게 무르익어 간다.",&h1_t3 };
+TextLinkedList h1_t1 = { "어느정도 시간이 흐른 것 같다.",&h1_t2 };
 
-TextLinkedList h2_t1 = { "어느정도 시간이 흐른 것 같다.",&h2_t2 };
-TextLinkedList h2_t2 = { "점점 석양이 지고, 태양빛이 붉게 무르익어 간다.",&h2_t3 };
-TextLinkedList h2_t3 = { "산 기슭을 훑고 지나오는 바람은 머나먼 곳으로 떠나는 것 같다.",&h2_t4 };
-TextLinkedList h2_t4 = { "여기에 존재하는 것은 나 자신과 좀비...",&h2_t5 };
-TextLinkedList h2_t5 = { "그리고 이제는 성가신 기계음의 반복적인 소음...",&h2_t6 };
-TextLinkedList h2_t6 = { "자신의 영역을 침범하는 낯선 소음과 경쟁하듯 간섭을 이룬다.",&h2_t7 };
-TextLinkedList h2_t7 = { "처음에는 이방인이 열세했지만 시간이 갈 수록 원주민을 압도한다.",&h2_t8 };
-TextLinkedList h2_t8 = { "이제는 더 이상 본래 원주민의 모습은 온데 간데 없고 이방인이 주인 자리를 차지했다.",&h2_t9 };
-TextLinkedList h2_t9 = { "브브브브브ㅡ브브브브브ㅡ브브브브브ㅡ브브브브브",&h2_t10 };
-TextLinkedList h2_t10 = { "바바바바바ㅡ바바바바바ㅡ바바바바바ㅡ바바바바바",&h2_t11 };
-TextLinkedList h2_t11 = { "눈을 떠보니 저 멀리 산 골짜기 위로 희망이 날아오고 있다.",&h2_t12 };
-TextLinkedList h2_t12 = { "구하러 왔구나!",&h2_t13 };
-TextLinkedList h2_t13 = { "부ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ왕ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",&h2_t14 };
-TextLinkedList h2_t14 = { "내 머리 위로 굉음을 내며 지나갔다.",&h2_t15 };
-TextLinkedList h2_t15 = { "그리고 내가 마지막으로 본 것은 눈 앞을 뒤 덮는 섬광이었다.",&h2_t16 };
-TextLinkedList h2_t16 = { "삐ㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣ",&h2_t17 };
-TextLinkedList h2_t17 = { "쿠구구구구구구구구구구구 쿠구구구구구구구구구구구",&h2_t18 };
-TextLinkedList h2_t18 = { "일종의 경련과 함께 눈이 떠졌다.",&h2_t19 };
-TextLinkedList h2_t19 = { "흐어악!",&h2_t20 };
-TextLinkedList h2_t20 = { "심장 박동이 온몸으로 느껴진다.",&h2_t21 };
-TextLinkedList h2_t21 = { "마치 내연 기관이 주체할 수 없을 속도로 펌프질하는 것처럼 과열 상태다.",&h2_t22 };
-TextLinkedList h2_t22 = { "코로나에 걸려서 온 몸에 열이 났던 것 같다.",&h2_t23 };
-TextLinkedList h2_t23 = { "잠에서 일어나니 등이 축축하게 젖어있다.",&h2_t24 };
 TextLinkedList h2_t24 = { "엄마!!나 또 군대 꿈 꿨어!",NULL };
+TextLinkedList h2_t23 = { "잠에서 일어나니 등이 축축하게 젖어있다.",&h2_t24 };
+TextLinkedList h2_t22 = { "코로나에 걸려서 온 몸에 열이 났던 것 같다.",&h2_t23 };
+TextLinkedList h2_t21 = { "마치 내연 기관이 주체할 수 없을 속도로 펌프질하는 것처럼 과열 상태다.",&h2_t22 };
+TextLinkedList h2_t20 = { "심장 박동이 온몸으로 느껴진다.",&h2_t21 };
+TextLinkedList h2_t19 = { "흐어악!",&h2_t20 };
+TextLinkedList h2_t18 = { "일종의 경련과 함께 눈이 떠졌다.",&h2_t19 };
+TextLinkedList h2_t17 = { "쿠구구구구구구구구구구구 쿠구구구구구구구구구구구",&h2_t18 };
+TextLinkedList h2_t16 = { "삐ㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣ",&h2_t17 };
+TextLinkedList h2_t15 = { "그리고 내가 마지막으로 본 것은 눈 앞을 뒤 덮는 섬광이었다.",&h2_t16 };
+TextLinkedList h2_t14 = { "내 머리 위로 굉음을 내며 지나갔다.",&h2_t15 };
+TextLinkedList h2_t13 = { "부ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ왕ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",&h2_t14 };
+TextLinkedList h2_t12 = { "구하러 왔구나!",&h2_t13 };
+TextLinkedList h2_t11 = { "눈을 떠보니 저 멀리 산 골짜기 위로 희망이 날아오고 있다.",&h2_t12 };
+TextLinkedList h2_t10 = { "바바바바바ㅡ바바바바바ㅡ바바바바바ㅡ바바바바바",&h2_t11 };
+TextLinkedList h2_t9 = { "브브브브브ㅡ브브브브브ㅡ브브브브브ㅡ브브브브브",&h2_t10 };
+TextLinkedList h2_t8 = { "이제는 더 이상 본래 원주민의 모습은 온데 간데 없고 이방인이 주인 자리를 차지했다.",&h2_t9 };
+TextLinkedList h2_t7 = { "처음에는 이방인이 열세했지만 시간이 갈 수록 원주민을 압도한다.",&h2_t8 };
+TextLinkedList h2_t6 = { "자신의 영역을 침범하는 낯선 소음과 경쟁하듯 간섭을 이룬다.",&h2_t7 };
+TextLinkedList h2_t5 = { "그리고 이제는 성가신 기계음의 반복적인 소음...",&h2_t6 };
+TextLinkedList h2_t4 = { "여기에 존재하는 것은 나 자신과 좀비...",&h2_t5 };
+TextLinkedList h2_t3 = { "산 기슭을 훑고 지나오는 바람은 머나먼 곳으로 떠나는 것 같다.",&h2_t4 };
+TextLinkedList h2_t2 = { "점점 석양이 지고, 태양빛이 붉게 무르익어 간다.",&h2_t3 };
+TextLinkedList h2_t1 = { "어느정도 시간이 흐른 것 같다.",&h2_t2 };
 
-TextLinkedList b1_t1 = { "어느정도 시간이 흐른 것 같다.",&b1_t2 };
-TextLinkedList b1_t2 = { "점점 석양이 지고, 태양빛이 붉게 무르익어 간다.",&b1_t3 };
-TextLinkedList b1_t3 = { "산 기슭을 훑고 지나오는 바람은 머나먼 곳으로 떠나는 것 같다.",&b1_t4 };
-TextLinkedList b1_t4 = { "여기에 존재하는 것은 나 자신과 좀비...",&b1_t5 };
-TextLinkedList b1_t5 = { "그리고 이제는 성가신 기계음의 반복적인 소음...",&b1_t6 };
-TextLinkedList b1_t6 = { "며칠이나 지났을까...좀비들이 옥상 문 앞까지 들랑거리는 소리가 들린다.",&b1_t7 };
-TextLinkedList b1_t7 = { "문은 통신장비들로 막아놔서 들어올 수는 없을 것이다.",&b1_t8 };
-TextLinkedList b1_t8 = { "하지만 나 또한 마찬가지다.",&b1_t9 };
-TextLinkedList b1_t9 = { "그렇다. 정말 빠져나갈 길이 없는 것이다.",&b1_t10 };
-TextLinkedList b1_t10 = { "차라리 폭격을 당해서 시원한 불 비를 맞고 작렬하게 불타고 싶을 정도다.",&b1_t11 };
-TextLinkedList b1_t11 = { "의식은 점점 메말라가는 느낌이다.",&b1_t12 };
-TextLinkedList b1_t12 = { "차라리 좀비한테 먹히는게 더 의미있을 것 같다.",&b1_t13 };
-TextLinkedList b1_t13 = { "하지만 이제는 문을 막아놓은 통신 장비조차 옮길 힘이 없다.",&b1_t14 };
-TextLinkedList b1_t14 = { "이럴때 옥상이라는 장점을 이용하면 되는 것을 깨달았다.",&b1_t15 };
-TextLinkedList b1_t15 = { "머리부터 자유 낙하를 했다.",&b1_t16 };
 TextLinkedList b1_t16 = { "콰직!",NULL };
+TextLinkedList b1_t15 = { "머리부터 자유 낙하를 했다.",&b1_t16 };
+TextLinkedList b1_t14 = { "이럴때 옥상이라는 장점을 이용하면 되는 것을 깨달았다.",&b1_t15 };
+TextLinkedList b1_t13 = { "하지만 이제는 문을 막아놓은 통신 장비조차 옮길 힘이 없다.",&b1_t14 };
+TextLinkedList b1_t12 = { "차라리 좀비한테 먹히는게 더 의미있을 것 같다.",&b1_t13 };
+TextLinkedList b1_t11 = { "의식은 점점 메말라가는 느낌이다.",&b1_t12 };
+TextLinkedList b1_t10 = { "차라리 폭격을 당해서 시원한 불 비를 맞고 작렬하게 불타고 싶을 정도다.",&b1_t11 };
+TextLinkedList b1_t9 = { "그렇다. 정말 빠져나갈 길이 없는 것이다.",&b1_t10 };
+TextLinkedList b1_t8 = { "하지만 나 또한 마찬가지다.",&b1_t9 };
+TextLinkedList b1_t7 = { "문은 통신장비들로 막아놔서 들어올 수는 없을 것이다.",&b1_t8 };
+TextLinkedList b1_t6 = { "며칠이나 지났을까...좀비들이 옥상 문 앞까지 들랑거리는 소리가 들린다.",&b1_t7 };
+TextLinkedList b1_t5 = { "그리고 이제는 성가신 기계음의 반복적인 소음...",&b1_t6 };
+TextLinkedList b1_t4 = { "여기에 존재하는 것은 나 자신과 좀비...",&b1_t5 };
+TextLinkedList b1_t3 = { "산 기슭을 훑고 지나오는 바람은 머나먼 곳으로 떠나는 것 같다.",&b1_t4 };
+TextLinkedList b1_t2 = { "점점 석양이 지고, 태양빛이 붉게 무르익어 간다.",&b1_t3 };
+TextLinkedList b1_t1 = { "어느정도 시간이 흐른 것 같다.",&b1_t2 };
 
-
-TextLinkedList b2_t1 = { "어느정도 시간이 흐른 것 같다.",&h2_t2 };
-TextLinkedList b2_t2 = { "점점 석양이 지고, 태양빛이 붉게 무르익어 간다.",&h2_t3 };
-TextLinkedList b2_t3 = { "산 기슭을 훑고 지나오는 바람은 머나먼 곳으로 떠나는 것 같다.",&h2_t4 };
-TextLinkedList b2_t4 = { "여기에 존재하는 것은 나 자신과 좀비...",&h2_t5 };
-TextLinkedList b2_t5 = { "그리고 이제는 성가신 기계음의 반복적인 소음...",&h2_t6 };
-TextLinkedList b2_t6 = { "자신의 영역을 침범하는 낯선 소음과 경쟁하듯 간섭을 이룬다.",&h2_t7 };
-TextLinkedList b2_t7 = { "처음에는 이방인이 열세했지만 시간이 갈 수록 원주민을 압도한다.",&h2_t8 };
-TextLinkedList b2_t8 = { "이제는 더 이상 본래 원주민의 모습은 온데 간데 없고 이방인이 주인 자리를 차지했다.",&h2_t9 };
-TextLinkedList b2_t9 = { "브브브브브ㅡ브브브브브ㅡ브브브브브ㅡ브브브브브",&h2_t10 };
-TextLinkedList b2_t10 = { "바바바바바ㅡ바바바바바ㅡ바바바바바ㅡ바바바바바",&h2_t11 };
-TextLinkedList b2_t11 = { "눈을 떠보니 저 멀리 산 골짜기 위로 희망이 날아오고 있다.",&h2_t12 };
-TextLinkedList b2_t12 = { "구하러 왔구나!",&h2_t13 };
-TextLinkedList b2_t13 = { "부ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ왕ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",&h2_t14 };
-TextLinkedList b2_t14 = { "내 머리 위로 굉음을 내며 지나갔다.",&h2_t15 };
-TextLinkedList b2_t15 = { "그리고 내가 마지막으로 본 것은 눈 앞을 뒤 덮는 섬광이었다.",&h2_t16 };
-TextLinkedList b2_t16 = { "삐ㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣ",&h2_t17 };
-TextLinkedList b2_t17 = { "쿠구구구구구구구구구구구 쿠구구구구구구구구구구구",&h2_t18 };
-TextLinkedList b2_t18 = { "일종의 경련과 함께 눈이 떠졌다.",&h2_t19 };
-TextLinkedList b2_t19 = { "흐어악!",&h2_t20 };
-TextLinkedList b2_t20 = { "몸이 홀가분하고 새처럼 가벼워진 것 같다.",&h2_t21 };
-TextLinkedList b2_t21 = { "마치 영혼이라도 된 것처럼 자유로운 느낌이다.",&h2_t22 };
-TextLinkedList b2_t22 = { "정말 그렇다.",&h2_t23 };
-TextLinkedList b2_t23 = { "밑을 보니 잔해물을 이불로 덮고 자고있는 내 모습이 보인다.",&h2_t24 };
 TextLinkedList b2_t24 = { "이런..",NULL };
-
-
+TextLinkedList b2_t23 = { "밑을 보니 잔해물을 이불로 덮고 자고있는 내 모습이 보인다.",&h2_t24 };
+TextLinkedList b2_t22 = { "정말 그렇다.",&h2_t23 };
+TextLinkedList b2_t21 = { "마치 영혼이라도 된 것처럼 자유로운 느낌이다.",&h2_t22 };
+TextLinkedList b2_t20 = { "몸이 홀가분하고 새처럼 가벼워진 것 같다.",&h2_t21 };
+TextLinkedList b2_t19 = { "흐어악!",&h2_t20 };
+TextLinkedList b2_t18 = { "일종의 경련과 함께 눈이 떠졌다.",&h2_t19 };
+TextLinkedList b2_t17 = { "쿠구구구구구구구구구구구 쿠구구구구구구구구구구구",&h2_t18 };
+TextLinkedList b2_t16 = { "삐ㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣ",&h2_t17 };
+TextLinkedList b2_t15 = { "그리고 내가 마지막으로 본 것은 눈 앞을 뒤 덮는 섬광이었다.",&h2_t16 };
+TextLinkedList b2_t14 = { "내 머리 위로 굉음을 내며 지나갔다.",&h2_t15 };
+TextLinkedList b2_t13 = { "부ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ왕ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",&h2_t14 };
+TextLinkedList b2_t12 = { "구하러 왔구나!",&h2_t13 };
+TextLinkedList b2_t11 = { "눈을 떠보니 저 멀리 산 골짜기 위로 희망이 날아오고 있다.",&h2_t12 };
+TextLinkedList b2_t10 = { "바바바바바ㅡ바바바바바ㅡ바바바바바ㅡ바바바바바",&h2_t11 };
+TextLinkedList b2_t9 = { "브브브브브ㅡ브브브브브ㅡ브브브브브ㅡ브브브브브",&h2_t10 };
+TextLinkedList b2_t8 = { "이제는 더 이상 본래 원주민의 모습은 온데 간데 없고 이방인이 주인 자리를 차지했다.",&h2_t9 };
+TextLinkedList b2_t7 = { "처음에는 이방인이 열세했지만 시간이 갈 수록 원주민을 압도한다.",&h2_t8 };
+TextLinkedList b2_t6 = { "자신의 영역을 침범하는 낯선 소음과 경쟁하듯 간섭을 이룬다.",&h2_t7 };
+TextLinkedList b2_t5 = { "그리고 이제는 성가신 기계음의 반복적인 소음...",&h2_t6 };
+TextLinkedList b2_t4 = { "여기에 존재하는 것은 나 자신과 좀비...",&h2_t5 };
+TextLinkedList b2_t3 = { "산 기슭을 훑고 지나오는 바람은 머나먼 곳으로 떠나는 것 같다.",&h2_t4 };
+TextLinkedList b2_t2 = { "점점 석양이 지고, 태양빛이 붉게 무르익어 간다.",&h2_t3 };
+TextLinkedList b2_t1 = { "어느정도 시간이 흐른 것 같다.",&h2_t2 };
 
 //선택지의 수에 따라 링크를 저장한 구조체포인터 배열 생성
 
@@ -1575,7 +1165,7 @@ void print_console() {
 		}
 
 		keyControlData.isSubmit = FALSE;
-		// 페이지 넘겨줄 부분 추가해야 함
+		// 여기 어떻게 해야할지 모르겠음
 	}
 }
 int main() {
