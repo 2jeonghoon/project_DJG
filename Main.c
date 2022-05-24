@@ -1111,15 +1111,15 @@ TreeNode* checking_node(TreeNode* current_node) { //일단 만들어놈 쓸지 �
 	}
 	return current_node; //조건도 아니고 단말도 아니면 현재 노드 주소 반환
 }
-void print_console() {
-	while (1) {
+void print_console(ListNode* inventory) {
+	TreeNode* t = root;
+
+	// 만약 TreeNode가 Null이라면 while문 종료
+	while (t != NULL) {
+		system("cls");
 		pos.X = 2;
 		pos.Y = 1;
-		TreeNode* t = root;
-		// 만약 TreeNode가 Null이라면 while문 종료
-		if (t == NULL) {
-			break;
-		}
+		
 		printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 		printf("■　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■\n");
 		printf("■　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■\n");
@@ -1142,6 +1142,7 @@ void print_console() {
 		printf("■                                                                                              ■\n");
 		printf("■                                                                                              ■\n");
 		printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+		print_list(inventory);
 		for (TextLinkedList* current_text = t->thead; current_text != NULL; current_text = current_text->link) {
 			gotoxy();
 			printf("%s", current_text->text);
@@ -1170,19 +1171,15 @@ void print_console() {
 }
 int main() {
 
-	/*ListNode* inventory = (ListNode*)malloc(sizeof(ListNode));
+	ListNode* inventory = (ListNode*)malloc(sizeof(ListNode));
 	init(inventory);
 	char* itemList[15] = { "에너지바","칸막이 열쇠","야채맛 건빵","부러진 대걸레","붕대","라이터","손 소독제","총기함 열쇠","K2 소총","K5 권총","옥상 열쇠","전투 식량","빅팜 소시지","ACDC 변환 장치" };
 	inventory = insert_last(inventory, itemList[0]);
 	inventory = insert_last(inventory, itemList[1]);
 	print_list(inventory);
-	*/
 
 	system("mode con cols=98 lines=30"); // mode con:콘솔모드 cols:가로 lines:세로
-	//Intro();
-	//Home();
 
-
-	print_console();
+	print_console(inventory);
 	return 0;
 }
