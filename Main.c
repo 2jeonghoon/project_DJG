@@ -990,13 +990,14 @@ void print_list(ListNode* head)
 	int num = 1;
 	if (head->prelink == head || head->link == head)
 	{
-		printf("=================INVENTORY===================\n");
+		printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+		
 		printf("비어있음\n");
-		printf("=============================================\n");
+		printf("==================================================================================================\n");
 		return;
 	}
 	p = head->link;
-	printf("=================INVENTORY===================\n");
+	printf("============================================INVENTORY=============================================\n");
 	do {
 
 		printf("%d.%s", num, p->data);
@@ -1004,7 +1005,7 @@ void print_list(ListNode* head)
 		p = p->link;
 		printf("\n");
 	} while (p != head);
-	printf("=============================================\n");
+	printf("==================================================================================================\n");
 }
 ListNode* deleted(ListNode* head, ListNode* removed) {
 	if (head == removed) return;
