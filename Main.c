@@ -927,8 +927,6 @@ void map_print() {
 	system("cls");
 	Sleep(10);
 	map_print_console();
-	// if floor == 1 floor_1();
-	// if floor == 2 floor_2();
 }
 
 // 키보드에서 입력받은 값을 토대로 화면에 출력
