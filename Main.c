@@ -15,6 +15,8 @@
 #define SUBMIT 5
 #define READYTOINPUT 6 // 입력을 기다리는 상태
 #define SELECTSTARTPOS 21
+#define KEY_SIZE 8
+#define TABLE_SIZE 
 
 //함수 선언부
 
@@ -35,6 +37,10 @@ typedef struct ListNode {
 	struct ListNode* link;
 } ListNode;
 
+typedef struct PlayerStat {
+	int hp;
+
+}PlayerStat;
 
 typedef struct {
 	int limitMinY; // 홈메뉴 최상단 y값 이 값을 통해 사용자가 맨 위에서 더 이동하려고 하는 상황 해결
@@ -90,9 +96,8 @@ ListNode* deleted(ListNode* head, ListNode* removed);
 int searching(ListNode* head, element* data);
 ListNode* getdeleteNode(ListNode* head, element* data);
 void init(ListNode* head);
-void map_print();
-void map_print_console();
-void map_visited();
+void map_print_console(); void map_print();
+PlayerStat Player;
 
 //=============================================================노드 선언부=============================================================
 TreeNode happy1;
@@ -814,11 +819,14 @@ void print_console(TreeNode* current) {
 	pos.Y = 10;
 	print_frame();
 	gotoxy();
-	printf("Press Any Key to Continue");
-	getchar();
+	// printf("Press Any Key to Continue");
+	// getchar();
 	print_frame();
-	pos.X = 4;
 	pos.Y = 2;
+	pos.X = 88;
+	gotoxy();
+	printf("hp = %d", Player.hp);
+	pos.X = 4;
 	for (TextLinkedList* current_text = current->thead; current_text != NULL; current_text = current_text->link) {
 		gotoxy();
 		printf("%s", current_text->text);
@@ -871,12 +879,9 @@ int KeyIn(TreeNode* current, ListNode* inventory) {
 		print_console(current);
 	}
 	else if (key == 77 || key == 109)  {
-		// m, M키가 눌렸을 때 
-		if (current != &confirm && current != &explore && current != &fight) {
-			map_print();
+			map_print(current);
 			getchar();
 			print_console(current);
-		}
 	}
 	return READYTOINPUT;
 }
@@ -907,7 +912,7 @@ void map_print_console() {
 	printf("■  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ■\n");
 	printf("■                                                                                              ■\n");
 	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
-	printf("■  방문한 곳 :                                                                                 ■\n"); // 현 위치나 방문한 곳 구현
+	printf("■  > 미니맵 끄기                                                                               ■\n");
 	printf("■                                                                                              ■\n");
 	printf("■　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■\n");
 	printf("■                                                                                              ■\n");
@@ -915,15 +920,7 @@ void map_print_console() {
 	printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
 }
 
-void map_visited() {
-	// x 9 y 25
-	pos.X = 9;
-	pos.Y = 25;
-
-
-}
-
-void map_print() {
+void map_print(TreeNode* current) {
 	system("cls");
 	Sleep(10);
 	map_print_console();
@@ -1199,12 +1196,18 @@ ListNode* checking_inventory(TreeNode* current_node, ListNode* inventory) {
 			inventory = insert_last(inventory, itemList[0]);
 			current_node->thead = &no_item;
 		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &e21) { //부러진 대걸레
 		is_item = searching(inventory, itemList[1]);
 		if (!is_item && current_node->thead != &no_item) {
 			inventory = insert_last(inventory, itemList[1]);
 			current_node->thead = &no_item;
+		}
+		else {
+			Player.hp--;
 		}
 	}
 	else if (current_node == &e31) { // 차갑게 식은 냉동 만두
@@ -1213,12 +1216,18 @@ ListNode* checking_inventory(TreeNode* current_node, ListNode* inventory) {
 			inventory = insert_last(inventory, itemList[2]);
 			current_node->thead = &no_item;
 		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &e41) { // 그냥 열쇠
 		is_item = searching(inventory, itemList[3]);
 		if (!is_item && current_node->thead != &no_item) {
 			inventory = insert_last(inventory, itemList[3]);
 			current_node->thead = &no_item;
+		}
+		else {
+			Player.hp--;
 		}
 	}
 	else if (current_node == &w2) { // 손전등
@@ -1227,6 +1236,9 @@ ListNode* checking_inventory(TreeNode* current_node, ListNode* inventory) {
 			inventory = insert_last(inventory, itemList[4]);
 			current_node->thead = &no_item;
 		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &w31) { // 야채 건빵
 		is_item = searching(inventory, itemList[5]);
@@ -1234,18 +1246,28 @@ ListNode* checking_inventory(TreeNode* current_node, ListNode* inventory) {
 			inventory = insert_last(inventory, itemList[5]);
 			current_node->thead = &no_item;
 		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &w42) { //몽키 스패너
 		is_item = searching(inventory, itemList[6]);
-		if (!is_item && current_node->thead != &no_item) {}
-		inventory = insert_last(inventory, itemList[6]);
-		current_node->thead = &no_item;
+		if (!is_item && current_node->thead != &no_item) {
+			inventory = insert_last(inventory, itemList[6]);
+			current_node->thead = &no_item;
+		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &w51) { // 붕대 
 		is_item = searching(inventory, itemList[7]);
 		if (!is_item && current_node->thead != &no_item) {
 			inventory = insert_last(inventory, itemList[7]);
 			current_node->thead = &no_item;
+		}
+		else {
+			Player.hp--;
 		}
 	}
 	else if (current_node == &w61) { // 터보 라이터
@@ -1255,12 +1277,18 @@ ListNode* checking_inventory(TreeNode* current_node, ListNode* inventory) {
 			current_node->thead = &no_item;
 
 		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &w71) { // 손 소독제
 		is_item = searching(inventory, itemList[9]);
 		if (!is_item && current_node->thead != &no_item) {
 			inventory = insert_last(inventory, itemList[9]);
 			current_node->thead = &no_item;
+		}
+		else {
+			Player.hp--;
 		}
 	}
 	else if (current_node == &p21) { // 총기함 키
@@ -1269,12 +1297,18 @@ ListNode* checking_inventory(TreeNode* current_node, ListNode* inventory) {
 			inventory = insert_last(inventory, itemList[10]);
 			current_node->thead = &no_item;
 		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &p53) { //뭔지 모를 열쇠
 		is_item = searching(inventory, itemList[11]);
 		if (!is_item && current_node->thead != &no_item) {
 			inventory = insert_last(inventory, itemList[11]);
 			current_node->thead = &no_item;
+		}
+		else {
+			Player.hp--;
 		}
 	}
 	else if (current_node == &p63) { //권총과 탄알집
@@ -1283,6 +1317,9 @@ ListNode* checking_inventory(TreeNode* current_node, ListNode* inventory) {
 			inventory = insert_last(inventory, itemList[12]);
 
 		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &p71) {//노트북과 연결 포트
 		is_item = searching(inventory, itemList[14]);
@@ -1290,12 +1327,18 @@ ListNode* checking_inventory(TreeNode* current_node, ListNode* inventory) {
 			inventory = insert_last(inventory, itemList[14]);
 			current_node->thead = &no_item;
 		}
+		else {
+			Player.hp--;
+		}
 	}
 	else if (current_node == &p81) { //k2 소총
 		is_item = searching(inventory, itemList[13]);
 		if (!is_item && current_node->thead != &no_item) {
 			inventory = insert_last(inventory, itemList[13]);
 			current_node->thead = &no_item;
+		}
+		else {
+			Player.hp--;
 		}
 	}
 	return inventory;
@@ -1353,6 +1396,7 @@ int main() {
 	ListNode* inventory = (ListNode*)malloc(sizeof(ListNode));
 	init(inventory);
 	system("mode con cols=100 lines=35"); // mode con:콘솔모드 cols:가로 lines:세로
+	Player.hp = 5;
 
 	while (current != NULL) {
 		// 만약 TreeNode가 Null이라면 while문 종료
@@ -1397,6 +1441,11 @@ int main() {
 
 		//격리생활관까지 수정완료
 		keyControlData.isSubmit = FALSE;
+
+		if (Player.hp == 0) {
+			printf("Game Over");
+			break;
+		}
 	}
 	return 0;
 }
